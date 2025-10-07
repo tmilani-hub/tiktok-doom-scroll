@@ -4,6 +4,7 @@
 	color: #ffffff;
 	font-family: inter;
 }
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -15,39 +16,48 @@ body {
 
 	background-color: rgba(0, 0, 0, 1);
 }
+
 main {
 	display: flex;
 	flex-direction: row;
 	align-items: start;
 	justify-content: space-between;
 	width: 100%;
+	height: 100%;
+
 	#EDM1 {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		justify-content: space-between;
 		gap: 10px;
-		width: 15%;
+		width: 20%;
 		padding: 5px;
+
 		.EDM1--0 {
 			display: flex;
 			flex-direction: row;
-			align-items: start;
-			justify-content: space-between;
-			text-align: start;
+			align-items: center;
+			justify-content: start;
+			gap: 12px;
+
 			width: 100%;
+
+			a {
+				text-decoration: none;
+			}
 		}
 		.EDM1-1 {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: start;
-			text-align: start;
-			width: 100%;
+			width: 90%;
 			gap: 8px;
 			padding: 6px 10px;
 			border-radius: 9999px;
 			background-color: rgba(33, 33, 33, 1);
+
 			p {
 				color: rgba(128, 128, 128, 1);
 				font-weight: 400;
@@ -57,51 +67,183 @@ main {
 		.EDM1-2 {
 			display: flex;
 			flex-direction: row;
-			align-items: start;
-			justify-content: space-between;
-			text-align: start;
+			align-items: center;
+			justify-content: start;
+			gap: 12px;
 			width: 100%;
-			p {
+
+			a {
 				color: rgba(255, 59, 92, 1);
+				text-decoration: none;
 			}
 		}
 
 		.EDM1-8 {
 			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			background-color: rgba(255, 59, 92, 1);
+			padding: 12px 8px;
+			width: 90%;
+			border-radius: 8px;
+
+			button {
+				color: rgba(255, 255, 255, 1);
+				background-color: rgba(255, 59, 92, 1);
+				border: 0px;
+			}
+		}
+
+		.EDM1-9 {
+			display: flex;
 			flex-direction: column;
 			align-items: start;
-			justify-content: space-between;
-			width: 100%;
+			justify-content: center;
+			gap: 12px;
+			width: 70%;
+
+			p {
+				color: rgba(126, 126, 126, 1);
+				font-size: 14px;
+				font-weight: 800;
+			}
 		}
 	}
 	#EDM2 {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: end;
 		justify-content: center;
+		gap: 24px;
+		width: 29%;
 
-		#EDM2-01 {
-			width: 50%;
-			height: 50%;
+		.EDM2-01 {
+			background-color: rgba(86, 86, 86, 0.2);
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			justify-content: center;
+			.EDM2-01-1 {
+				padding: 100px 0px;
+				width: 100%;
+				background-color: rgba(86, 86, 86, 0.2);
+			}
+			.EDM-01-2 {
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				justify-content: center;
+				gap: 8px;
+				padding: 0px 0px 8px 8px;
+				background-color: rgba(86, 86, 86, 0.2);
+				width: 100%;
+				h1 {
+					font-weight: 700;
+					font-size: 22px;
+				}
+				p {
+					font-weight: 500;
+					font-size: 14px;
+					color: rgba(166, 166, 166, 1);
+				}
+			}
+			.color {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				position: relative;
+				.red {
+					width: 50%;
+					height: 3px;
+					background-color: rgba(255, 59, 92, 1);
+					border-bottom-left-radius: 12px;
+				}
+				.blue {
+					width: 50%;
+					height: 3px;
+					background-color: rgba(117, 117, 117, 1);
+					border-bottom-right-radius: 12px;
+				}
+			}
 		}
 		.EDM2-1 {
-		}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
 
-		.EDM2--1 {
+			.EDM2--2 {
+				.EDM2--4 {
+					width: max-content;
+					height: 40px;
+					border-radius: 9999px;
+				}
+			}
+
+			.EDM2--1 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 4px;
+
+				.EDM2--3 {
+					padding: 8px;
+					width: max-content;
+					height: 20px;
+					border-radius: 9999px;
+					background-color: rgba(33, 33, 33, 1);
+				}
+			}
 		}
 	}
+
 	#EDM3 {
 		display: flex;
 		flex-direction: column;
 		align-items: end;
-		justify-content: center;
+		justify-content: space-between;
+		gap: 25px;
+		width: 21%;
+		height: 76.5vh;
+
 		.EDM3-1 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: end;
+			width: 100%;
+			gap: 8px;
 		}
 
-		.EDM3-2 {
+		.EDM3--5 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			padding: 6px 10px;
+			border-radius: 9999px;
+			background-color: rgba(33, 33, 33, 1);
 		}
 
-		.EDM3-3 {
+		.EDM3-1-3 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 25px;
+
+			.EDM3--6 {
+				width: 50%;
+				padding: 10px;
+				border-radius: 9999px;
+				background-color: rgba(33, 33, 33, 1);
+			}
 		}
 	}
 }
